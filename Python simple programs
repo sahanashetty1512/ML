@@ -1,0 +1,74 @@
+//One dimensional array
+import numpy as np
+arr=np.array([1,2,3,4,5,6,7,8,9,10])
+print(arr)
+
+//2D array
+arr1=np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print(arr1)
+
+//properties of 1D
+print(arr.ndim)
+print(arr.shape)
+print(arr.size)
+print(arr.dtype)
+
+properties of 2D
+print(arr1.ndim)
+print(arr1.shape)
+print(ar1r.size)
+print(arr1.dtype)
+
+//1D
+print(np.sum(arr))
+print(np.min(arr))
+print(np.max(arr))
+print(np.mean(arr))
+print(np.std(arr))
+print(np.var(arr))
+
+//2D
+print(np.sum(arr1))
+print(np.min(arr1))
+print(np.max(arr1))
+print(np.mean(arr1))
+print(np.std(arr1))
+print(np.var(arr1))
+
+//scaling
+print(arr[1:4])
+print(arr[:4])
+print(arr[0:10:2])//step in scaling
+print(arr[::-1])//reverse
+
+//line graph
+import matplotlib.pyplot as plt
+x=[1,2,3,4,5]
+y=[100,200,300,400,500]
+plt.plot(x,y)
+plt.show()
+
+//bar graph
+plt.bar(x,y)
+plt.show()
+
+//scatter
+plt.scatter(x,y)
+plt.show()
+
+//Histogram
+data1=[10,20,30,45,60,80,89,100]
+plt.hist(data1)
+plt.show()
+
+data=[10,10,10,30,40,40,50,50,50]
+plt.hist(data)
+plt.show()
+
+//styling the graph
+plt.plot(x,y,color='blue',marker='d',linestyle='--')//marker we can give ^,o,d,D,s etc
+plt.grid(True)
+plt.title("LineGraph")
+plt.xlabel("xAxis")
+plt.ylabel("yAxis")
+plt.show()
